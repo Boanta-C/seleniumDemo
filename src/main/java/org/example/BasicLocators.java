@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 
 public class BasicLocators {
 
+    //will remain static for now
     public static void testBasicLocators(WebDriver driver) {
 
         long start;
@@ -42,18 +43,19 @@ public class BasicLocators {
 
     }
 
-    private static String findTextByLocator(WebDriver driver) {
-        WebElement webPageTitle =
-                driver.findElement(By.cssSelector("#www-wikipedia-org > main > div.central-textlogo > h1 > span"));
-        return webPageTitle.getText();
+    //will remain static for now
+    public static void clickElement(WebDriver driver) {
+        WebElement englishButton = driver.findElement(By.id("js-link-box-en"));
+        englishButton.click();
+        WebElement wikipediaWelcome = driver.findElement(By.id("Welcome_to_Wikipedia"));
+        assertTextEqualsExpected(wikipediaWelcome, "Welcome to Wikipedia");
     }
 
-    public static void assertTextEqualsExpected(WebDriver driver) {
-        String expectedText = "Wikipedia";
-        if(findTextByLocator(driver).equals(expectedText)) {
-            System.out.println("Title matches");
+    public static void assertTextEqualsExpected(WebElement webElement, String expectedText) {
+        if(webElement.getText().equals(expectedText)) {
+            System.out.println("Title " + webElement.getText() + " matches " + expectedText);
         } else
-            System.out.println("Title does not match"); //can also throw an exception but won't do that here
+            System.out.println("Title " + webElement.getText() + " does not match " + expectedText); //can also throw an exception but won't do that here
     }
 
 }
