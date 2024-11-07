@@ -51,6 +51,15 @@ public class BasicLocators {
         assertTextEqualsExpected(wikipediaWelcome, "Welcome to Wikipedia");
     }
 
+    //will remain static for now
+    public static void sentTextToWebPage(WebDriver driver, String textToSend) {
+        WebElement searchBox = driver.findElement(By.id("searchInput"));
+        searchBox.sendKeys(textToSend);
+
+        WebElement searchButton = driver.findElement(By.cssSelector("#searchform > div > button"));
+        searchButton.click();
+    }
+
     public static void assertTextEqualsExpected(WebElement webElement, String expectedText) {
         if(webElement.getText().equals(expectedText)) {
             System.out.println("Title " + webElement.getText() + " matches " + expectedText);

@@ -23,6 +23,7 @@ public class Main {
         BasicLocators.assertTextEqualsExpected(wikipediaLogo, "Wikipedia");
 
         BasicLocators.clickElement(driver);
+        BasicLocators.sentTextToWebPage(driver, "Selenium Webdriver");
 
         driver.quit();
 
