@@ -1,4 +1,4 @@
-package org.example;
+package org.example.wikipedia;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -16,14 +16,14 @@ public class Main {
         driver.manage().window().maximize();
         driver.get("http://www.wikipedia.org");
 
-        BasicLocators.testBasicLocators(driver);
+        WikipediaElementHandler.testBasicLocators(driver);
 
         WebElement wikipediaLogo = driver.
                 findElement(By.cssSelector("#www-wikipedia-org > main > div.central-textlogo > h1 > span"));
-        BasicLocators.assertTextEqualsExpected(wikipediaLogo, "Wikipedia");
+        WikipediaElementHandler.assertTextEqualsExpected(wikipediaLogo, "Wikipedia");
 
-        BasicLocators.clickElement(driver);
-        BasicLocators.sentTextToWebPage(driver, "Selenium Webdriver");
+        WikipediaElementHandler.clickElement(driver);
+        WikipediaElementHandler.sentTextToWebPage(driver, "Selenium Webdriver");
 
         driver.quit();
 

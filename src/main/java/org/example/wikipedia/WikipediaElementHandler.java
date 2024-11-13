@@ -1,11 +1,11 @@
-package org.example;
+package org.example.wikipedia;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class BasicLocators {
+public class WikipediaElementHandler {
 
     //will remain static for now
     public static void testBasicLocators(WebDriver driver) {
