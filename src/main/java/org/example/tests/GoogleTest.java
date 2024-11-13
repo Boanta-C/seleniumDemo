@@ -1,11 +1,12 @@
-package org.example.google;
+package org.example.tests;
 
+import org.example.web.google.GoogleElementHandler;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
 import java.time.Duration;
 
-public class Main {
+public class GoogleTest {
     public static void main(String[] args) {
 
         WebDriver driver = new EdgeDriver();

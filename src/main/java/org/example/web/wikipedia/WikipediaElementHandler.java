@@ -1,5 +1,6 @@
-package org.example.wikipedia;
+package org.example.web.wikipedia;
 
+import org.example.web.ElementUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -48,7 +49,7 @@ public class WikipediaElementHandler {
         WebElement englishButton = driver.findElement(By.id("js-link-box-en"));
         englishButton.click();
         WebElement wikipediaWelcome = driver.findElement(By.id("Welcome_to_Wikipedia"));
-        assertTextEqualsExpected(wikipediaWelcome, "Welcome to Wikipedia");
+        ElementUtils.assertTextEqualsExpected(wikipediaWelcome, "Welcome to Wikipedia");
     }
 
     //will remain static for now
@@ -58,13 +59,6 @@ public class WikipediaElementHandler {
 
         WebElement searchButton = driver.findElement(By.cssSelector("#searchform > div > button"));
         searchButton.click();
-    }
-
-    public static void assertTextEqualsExpected(WebElement webElement, String expectedText) {
-        if(webElement.getText().equals(expectedText)) {
-            System.out.println("Title " + webElement.getText() + " matches " + expectedText);
-        } else
-            System.out.println("Title " + webElement.getText() + " does not match " + expectedText); //can also throw an exception but won't do that here
     }
 
 }
