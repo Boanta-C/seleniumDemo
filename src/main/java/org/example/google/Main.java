@@ -18,6 +18,7 @@ public class Main {
         GoogleElementHandler.sentTextToSearchBox(driver);
         GoogleElementHandler.clickChannelButton(driver);
         GoogleElementHandler.rejectYoutubeCookies(driver);
+        GoogleElementHandler.executeJavaScriptActions(driver);
 
         driver.quit();
 
