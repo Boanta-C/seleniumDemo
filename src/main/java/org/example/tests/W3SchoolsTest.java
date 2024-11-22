@@ -18,6 +18,10 @@ public class W3SchoolsTest {
         W3SchoolsElementHandler.cookiesHandler(driver);
         W3SchoolsElementHandler.switchToFrame(driver);
 
+        W3SchoolsElementHandler.
+                selectURL(driver, "https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select");
+        W3SchoolsElementHandler.pickElementFromSelect(driver);
+
         driver.quit();
     }
 }
