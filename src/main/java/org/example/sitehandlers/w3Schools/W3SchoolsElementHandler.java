@@ -1,4 +1,4 @@
-package org.example.web.w3Schools;
+package org.example.sitehandlers.w3Schools;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

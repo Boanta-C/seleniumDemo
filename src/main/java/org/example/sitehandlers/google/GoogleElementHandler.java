@@ -1,4 +1,4 @@
-package org.example.web.google;
+package org.example.sitehandlers.google;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

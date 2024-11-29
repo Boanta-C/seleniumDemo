@@ -1,6 +1,6 @@
 package org.example.tests;
 
-import org.example.web.w3Schools.W3SchoolsElementHandler;
+import org.example.sitehandlers.w3Schools.W3SchoolsElementHandler;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 

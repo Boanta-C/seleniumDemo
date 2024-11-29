@@ -1,6 +1,6 @@
 package org.example.tests;
 
-import org.example.web.localWebsite.LocalWebsiteElementHandler;
+import org.example.sitehandlers.localWebsite.LocalWebsiteElementHandler;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 

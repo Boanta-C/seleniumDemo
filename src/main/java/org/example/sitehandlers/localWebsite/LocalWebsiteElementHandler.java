@@ -1,6 +1,6 @@
-package org.example.web.localWebsite;
+package org.example.sitehandlers.localWebsite;
 
-import org.example.web.ElementUtils;
+import org.example.sitehandlers.ElementUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

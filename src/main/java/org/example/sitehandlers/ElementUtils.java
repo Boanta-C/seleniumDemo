@@ -1,4 +1,4 @@
-package org.example.web;
+package org.example.sitehandlers;
 
 import org.openqa.selenium.WebElement;
 

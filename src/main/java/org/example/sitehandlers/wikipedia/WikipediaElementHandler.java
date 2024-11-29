@@ -1,6 +1,6 @@
-package org.example.web.wikipedia;
+package org.example.sitehandlers.wikipedia;
 
-import org.example.web.ElementUtils;
+import org.example.sitehandlers.ElementUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;

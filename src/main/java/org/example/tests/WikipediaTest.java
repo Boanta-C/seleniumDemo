@@ -1,7 +1,7 @@
 package org.example.tests;
 
-import org.example.web.ElementUtils;
-import org.example.web.wikipedia.WikipediaElementHandler;
+import org.example.sitehandlers.ElementUtils;
+import org.example.sitehandlers.wikipedia.WikipediaElementHandler;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
